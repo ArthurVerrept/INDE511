@@ -1,11 +1,62 @@
-text{
+html{overflow:hidden;}
+
+.logo{
     font-family: poleno, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size:3.125vw;
+    float: left;
+    margin-left: 5.573vw;
+    margin-top: 1.667vw;
+    margin-bottom: 0;
+    line-height: 100%;
+    color: #65433D;
+}
 
-font-weight: 800;
+.navigation{
+    text-align: right;
+    list-style-type: none;
+    margin-right:14.167vw;
+    margin-top: 1.354vw;
+    margin-bottom:0;
+    padding-right: 0;
+}
 
-font-style: normal;
+.navLinks{
+    display: inline;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.188vw;
+    margin-right:3.646vw;
+    color: #3B332E;
+}
 
-font-size:3.75rem;
+nav{
+    position: relative;
+}
+
+hr{
+    position: relative;
+    margin-top:6px;
+    margin-right: 5.208vw;
+    margin-left: 5.208vw;
+    color: #3B332E !important;
+    background-color: #3B332E !important;
+}
+
+.imageMid{
+    width: 55.573vw;
+    margin-left: 21.510vw;
+    display: block;
+}
+
+.topSVG{
+    width:31.458vw;
+    margin-top:5.926vw;
+    margin-left:34.271vw;
+    display: block;
+    position: absolute;
 }
 
 
