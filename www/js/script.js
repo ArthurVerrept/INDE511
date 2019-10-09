@@ -8,7 +8,7 @@ window.addEventListener('load', (event) => {
       svg[i].classList.add("bounceInDown");
       x = i / 40;
       svg[i].style.animationDelay = x.toString()+"s";
-      svg[i].style.animationDuration = "1s";
+      svg[i].style.animationDuration = "0.5s";
       svg[i].style.fill = "#65433D";
     }
     else{
@@ -22,6 +22,15 @@ window.addEventListener('load', (event) => {
   }
 });
 
-function animate(){
+var btns = document.querySelectorAll('shopInfoTitle');
 
-}
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener('click', function(){
+    console.log("success");
+    // if(btns[i].classList != "active"){
+      
+    //   btns[i].classList.add(" active");
+
+    // }
+  });
+} 

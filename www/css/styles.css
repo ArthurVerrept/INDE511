@@ -1,4 +1,17 @@
-html{overflow:hidden;}
+.home{overflow:hidden}
+
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: underline solid transparent;
+    transition: text-decoration 0.3s ease;
+}
+
+
 
 .logo{
     font-family: poleno, sans-serif;
@@ -11,6 +24,10 @@ html{overflow:hidden;}
     margin-bottom: 0;
     line-height: 100%;
     color: #65433D;
+}
+
+.logo:hover{
+    transform: scale(1.1)
 }
 
 .navigation{
@@ -45,10 +62,16 @@ hr{
     background-color: #3B332E !important;
 }
 
+.hrShop{
+    margin-bottom:1vw;
+}
+
+
 .imageMid{
     width: 55.573vw;
     margin-left: 21.510vw;
     display: block;
+    position: relative;
 }
 
 .topSVG{
@@ -59,5 +82,94 @@ hr{
     position: absolute;
 }
 
+.yogurt{
+    position: absolute;
+}
 
+.plain{
+    margin-left: 37.656vw;
+    margin-right: 38.073vw;
+    width: 24.271vw;
+    margin-top:11.889vw;
+}
+
+.blue{
+    margin-left:41.490vw;
+    width:35.677vw;
+    margin-top:3.889vw;
+}
+
+.mango{
+    margin-left:22vw;
+    width:35.677vw;
+    margin-top:3.889vw;
+}
+
+
+
+.yogurtPlainShop{
+    width:14.792vw;
+    align-content: center;
+    margin-left:5.5vw;
+    margin-top: -1vw;
+}
+
+.yogurtBlueShop{
+    width:15.188vw;
+    align-content: center;
+    margin-left:5vw;
+    margin-top: -1vw;
+}
+
+.yogurtMangoShop{
+    width:15.792vw;
+    align-content: center;
+    margin-left:5vw;
+    margin-top: -0.5vw;
+}
+
+
+.shopItem1{
+    margin-left:0;
+}
+
+.yogurtShopText{
+    text-align: center;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 3vw;
+    font-style: normal;
+    line-height: 100%;
+    margin-left:4vw;
+}
+
+.shopInfo{
+    margin-top:3vw;
+    margin-left:0;
+}
+
+button{
+    border: none;
+}
+
+.shopInfoTitle{
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2vw;
+    display: inline;
+    color: #3B332E;
+    opacity: 0.5;
+    margin-right: 2vw;
+}
+
+.active{
+    opacity: 1;
+}
+
+.shopInfoText{
+    margin-top:1.5vw;
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+}
 
