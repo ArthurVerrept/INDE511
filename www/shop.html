@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
+    
     <title>Document</title>
     <header>
             <nav class="row twelve columns">
                 <a href="index.html"><p class="logo">Yogan</p></a>
                 <ul class="navigation">
                     <a href="shop.html"><li class="navLinks">Shop</li></a>
-                    <li class="navLinks">Catering</li>
-                    <li class="navLinks">About</li>
-                    <li class="navLinks last">Vegan?</li>
+                    <a href="catering.html"><li class="navLinks">Catering</li></a>
+                    <a href="vegan.html"><li class="navLinks last">Why Vegan?</li></a>
+                    <li class="navLinks last"><img src="assets/favourite.svg" alt="Basket Icon" class="basket"></li>
                 </ul>
                 <hr class=hrShop>
             </nav>
@@ -27,32 +27,51 @@
 
 <body>
     <div class="row three columns shopItem1">
-        <h6 class="yogurtShopText">Coconut</h6>
+        <h5 class="yogurtShopBigText">Coconut</h5>
         <img class="yogurtPlainShop" src="assets/yogurtPlain.png" alt="Plain coconut yogurt">
     </div>
 
     <div class="row six columns shopInfo">
-        <button><h6 class="shopInfoTitle active">Ingredients</h6></button>
-        <button><h6 class="shopInfoTitle">About</h6></button>
-        <p class="shopInfoText">INGREDIENTS: coconut milk (coconut, water), organic coconut water, L. acidophilus, S. thermophilus, & other live cultures. Perishable, Keep Refrigerated.</p>
+        <button><h6 id="0" class="shopInfoTitle active underLine">Ingredients</h6></button>
+        <button><h6 id="0" class="shopInfoTitle">About</h6></button>
+        <p id="0" class="shopInfoText"> Coconut milk (coconut, water), organic coconut water, L. acidophilus, S. thermophilus, & other live cultures. Perishable, Keep Refrigerated.</p>
+        <p id="0" class="shopInfoText hidden">Creamy, full-fat, coconut milk, cultured with our own proprietary blend of probiotics gives you the consistency of whole milk Greek-yogurt. Rich in potassium, lauric acid and more than 300 billion live cultures per serving, it is as healthy as it is addictive.</p>
+    </div>
+
+    <div class="row three columns shopItem1">
+        <button>click me</button>
     </div>
 
     <div class="row twelve columns"><hr class="hrShop"></div>
 
     <div class="row three columns shopItem1">
-        <h2 class="yogurtShopText">Blueberry</h2>
+        <h5 class="yogurtShopBigText">Blueberry</h5>
         <img class="yogurtBlueShop" src="assets/yogurtBlueShop.png" alt="Blueberry coconut yogurt">
     </div>
 
-    <div class="row twelve columns"><hr class="hrShop"></div>
-
-    <div class="row three columns shopItem1">
-        <h2 class="yogurtShopText">Mango</h2>
-        <img class="yogurtMangoShop" src="assets/yogurtMangoShop.png" alt="Mango coconut yogurt">
+    <div class="row six columns shopInfo">
+            <button><h6 id="1" class="shopInfoTitle active underLine">Ingredients</h6></button>
+            <button><h6 id="1" class="shopInfoTitle">About</h6></button>
+            <p id="1" class="shopInfoText"> Coconut milk (coconut, water), organic coconut water, L. acidophilus, S. thermophilus, & other live cultures. Perishable, Keep Refrigerated.</p>
+            <p id="1" class="shopInfoText hidden">Creamy, full-fat, coconut milk, cultured with our own proprietary blend of probiotics gives you the consistency of whole milk Greek-yogurt. Rich in potassium, lauric acid and more than 300 billion live cultures per serving, it is as healthy as it is addictive.</p>
     </div>
 
     <div class="row twelve columns"><hr class="hrShop"></div>
 
+    <div class="row three columns shopItem1">
+        <h5 class="yogurtShopBigText">Mango</h5>
+        <img class="yogurtMangoShop" src="assets/yogurtMangoShop.png" alt="Mango coconut yogurt">
+    </div>
+
+    <div class="row six columns shopInfo">
+            <button><h6 id="2" class="shopInfoTitle active underLine">Ingredients</h6></button>
+            <button><h6 id="2" class="shopInfoTitle">About</h6></button>
+            <p id="2" class="shopInfoText"> Coconut milk (coconut, water), organic coconut water, L. acidophilus, S. thermophilus, & other live cultures. Perishable, Keep Refrigerated.</p>
+            <p id="2" class="shopInfoText hidden">Creamy, full-fat, coconut milk, cultured with our own proprietary blend of probiotics gives you the consistency of whole milk Greek-yogurt. Rich in potassium, lauric acid and more than 300 billion live cultures per serving, it is as healthy as it is addictive.</p>
+    </div>
+
+    <div class="row twelve columns"><hr class="hrShop"></div>
+    <script src="js/script.js"></script>
 </body>
 </html>
 
