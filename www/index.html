@@ -9,24 +9,29 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
+
     <title>Document</title>
 </head>
 
 <header>
-    <nav class="row twelve columns navbar">
-        <a href="index.html"><p class="logo">Yogan</p></a>
-        <ul class="navigation">
-            <a href="shop.html"><li class="navLinks">Shop</li></a>
-            <a href="catering.html"><li class="navLinks">Catering</li></a>
-            <a href="vegan.html"><li class="navLinks last">Why Vegan?</li></a>
-            <li class="navLinks last"><img src="assets/favourite.svg" alt="Basket Icon" class="basket"></li>
-        </ul>
-        <hr>
-    </nav>
+  <div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <img class='burgerClosed' onclick="closeNav()" src="assets/burgerMenuClose.svg" alt="menu icon">
+        <nav class="row twelve columns navbar">
+            <a href="index.html"><p class="logo">Yogan</p></a>
+            <ul class="navigation">
+                <a href="shop.html"><li class="navLinks">Shop</li></a>
+                <a href="catering.html"><li class="navLinks">Catering</li></a>
+                <a href="vegan.html"><li class="navLinks last">Why Vegan?</li></a>
+                <li class="navLinks last"><img src="assets/favourite.svg" alt="Basket Icon" class="basket"></li>
+            </ul>
+            <hr>
+        </nav>
+   </div>
 </header>
 
 <body class="home">
+  <div class="content">
     <div class="svgText">
         <svg class="topSVG" viewBox="55 0 23 23">
                 <path class="svg" d="M2.67,10c3.2-.89,6.19,8.72,3.22,9.82a.76.76,0,0,1-.16.06,2.21,2.21,0,0,1-2.68-1.33C2.63,17.84-.95,11,2.67,10Zm.87,7.74c.24.41,1.06,1.58,1.78,1.45a.5.5,0,0,0,.16-.05c.91-.34.77-2,.73-2.69-.08-1.15-1.26-6.28-3.3-5.71l-.12,0C.68,11.59,3,16.84,3.54,17.76Z" transform="translate(-1.07 -0.47)"/>
@@ -58,7 +63,7 @@
         <img class="yogurt mango animated fadeIn" style="animation-delay: 1s" src="assets/yogurtMango.png" alt="">
         <img class="yogurt blue animated fadeIn" style="animation-delay: 1s" timing-function delay iteration-count direction fill-mode;" src="assets/yogurtBlue.png" alt="">
         <img class="yogurt plain animated fadeIn" style="animation-duration: 0.8s; animation-delay: 0.8s" src="assets/yogurtPlain.png" alt="">
-        <img class="imageMid" src="assets/FINALFinal-02.svg" alt="">
+        <img class="imageMid" src="assets/FINALFinal-02.svg" alt=" ">
     </div>
 
     <svg class="bottomSVG" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="75 15 17 17">
@@ -136,20 +141,20 @@
           </g>
         </g>
       </svg>
-      
+    </div>
+      <img class='burgerOpen' onclick="openNav()" src="assets/burgerMenu.svg" alt="menu icon">
 </body>
 
 <footer>
-    <div class="row twelve columns">
-        <hr class="hrShop">
-          <div class="row four columns">
+    <div class="row twelve columns footer">
+          <div class="row four columns footerLeft">
             <p class="footerTextLeft">Email: yogun@thebestyogurt.com
             </p>
             <p class="footerTextLeft">
                 Tel: 07449666666
             </p>
         </div>
-        <div class="row four columns footerDiv">
+        <div class="row four columns footerMiddle">
             <p class="footerTextMiddle">55 North Hill <br> PL4 8HB <br> Plymouth, Devon
             </p>
         </div>
@@ -159,8 +164,9 @@
             <img class="footerIcon" src="assets/facebook.svg" alt="facebook icon">
             <img class="footerIcon" src="assets/twitter.svg" alt="twitter icon">
         </div>
-        
+      </div>
     </div>
+    <script src="js/script.js"></script>
 </footer>
 </html>
 
