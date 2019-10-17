@@ -11,23 +11,29 @@
         <link rel="stylesheet" href="css/styles.css">
         
         <title>Document</title>
-        <header>
-                <nav class="row twelve columns navbar">
-                    <a href="index.html"><p class="logo">Yogan</p></a>
-                    <ul class="navigation">
-                        <a href="shop.html"><li class="navLinks">Shop</li></a>
-                        <a href="catering.html"><li class="navLinks">Catering</li></a>
-                        <a href="vegan.html"><li class="navLinks last">Why Vegan?</li></a>
-                        <li class="navLinks last"><img src="assets/favourite.svg" alt="Basket Icon" class="basket"></li>
-                    </ul>
-                    <hr class=hrShop>
-                </nav>
-            </header>
     </head>
 
+<header>
+    <div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+        <nav class="row twelve columns navbar">
+            <a href="index.html"><p class="logo">Yogan</p></a>
+            <ul class="navigation">
+                <a href="index.html"><img class="yogunLogoMenu" src="assets/yogun.svg" alt="yogun logo"></a>
+                <a href="shop.html"><li class="navLinks first">Shop</li></a>
+                <a href="catering.html"><li class="navLinks">Catering</li></a>
+                <a href="vegan.html"><li class="navLinks last">Why Vegan?</li></a>
+                <li class="navLinks last"><img src="assets/favourite.svg" alt="Basket Icon" class="basket"></li>
+            </ul>
+            <hr>
+        </nav>
+    </div>
+</header>
+
     <body>
+        <img class="cateringLogo" src="assets/cateringLogo.svg" alt="Catering page logo">
         <div class="row twelve columns mainBody"></div>
-            <div class="row five columns">
+            <div class="row six columns">
                 <img class="weddingPhoto" src="assets/wedding.jpg" alt="wedding photo">
             </div>
 
@@ -40,24 +46,40 @@
                     sed purus. Nunc orci tortor, scelerisque id ultrices vitae, gravida feugiat quam.
                     Maecenas
                 </p>
-                <form>
-                        <div class="row">
-                        <div class="six columns">
-                            <input class="u-full-width" type="text" placeholder="name" id="nameInput">
-                        </div>
-                        <div class="six columns">
-                                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="EmailInput">
-                        </div>
-                        </div>
-                        <textarea class="u-full-width" placeholder="message" id="Message"></textarea>
-                        <label class="example-send-yourself-copy">
-                        <input type="checkbox">
-                        <span class="label-body">Send a copy to yourself</span>
-                        </label>
-                        <input class="button-primary" type="submit" value="Submit">
-                    </form>
-                </div>
             </div>
+                <div class="row six columns catering">
+                        <h2 class="cateringTitle">What We Offer</h2>
+                        <p class="cateringText"> Duis eget enim lacus. Aliquam dignissim ac lorem et sodales. Donec vehicula, mauris id consequat tincidunt, turpis erat efficitur tortor, non vestibulum arcu ligula ut libero. Proin egestas magna purus, at pharetra felis ultricies nec. Donec finibus, odio sed dignissim blandit, augue quam suscipit odio, eu bibendum nulla eros in lacus. Donec justo quam, molestie quis urna ut, consectetur dictum turpis. Nunc in dignissim nulla. Suspendisse eros est, pulvinar quis nunc ut, auctor porttitor justo. Pellentesque eget felis mi. Proin nec ipsum sit amet ante congue euismod. Sed ac tempor dolor. Aenean odio lectus, tincidunt nec velit vel, sollicitudin lacinia tortor. Etiam tincidunt iaculis consectetur.
+                        </p>
+                </div>
+                <div class="row twelve columns">
+                        <h2 class="cateringContact">Get in Contact</h2>
+                </div>
+
+                    <form>
+                        <div class="row nine columns">
+                            <div class="six columns">
+                                <input class="halfWidth" type="text" placeholder="name" id="nameInput">
+                            </div>
+                            <div class="six columns">
+                                    <input class="halfWidth right" type="email" placeholder="test@mailbox.com" id="EmailInput">
+                            </div>
+                            <textarea class="fullWidth" placeholder="message" id="Message"></textarea>
+                        </div>
+                        <div class="row three columns" style="margin-left:0;">
+                                <label class="copySend checkBox">
+                                <input class="copySend" type="checkbox">
+                                <span class="copySend">Send a copy to yourself</span>
+                                </label>
+                                <div class="row three columns shopItem1">
+                                        <button class="buttonCatering">Submit</button>
+                                </div>                        
+                        </div>
+                    </form>
+
+        </div>
+            <img class='burgerOpen' onclick="openNav()" src="assets/burgerMenu.svg" alt="menu icon">
+            <img class='burgerClosed hidden' style="z-index: 1;"onclick="closeNav()" src="assets/burgerMenuClose.svg" alt="menu icon">
             <script src="js/script.js"></script>
     </body>
 

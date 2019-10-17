@@ -4,10 +4,14 @@ window.onbeforeunload = () => {
 
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
+  document.querySelector(".burgerClosed").classList.replace('hidden', 'unHidden');
+  document.querySelector(".burgerClosed").classList.add = ' animated fadeOut';
 }
 
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
+
+  document.querySelector(".burgerClosed").classList.replace('unHidden', 'hidden');
 }
 
 window.addEventListener('scroll', ()=> {

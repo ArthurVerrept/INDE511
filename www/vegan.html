@@ -11,22 +11,28 @@
         <link rel="stylesheet" href="css/styles.css">
         
         <title>Document</title>
-        <header>
-                <nav class="row twelve columns navbar">
-                    <a href="index.html"><p class="logo">Yogan</p></a>
-                    <ul class="navigation">
-                        <a href="shop.html"><li class="navLinks">Shop</li></a>
-                        <a href="catering.html"><li class="navLinks">Catering</li></a>
-                        <a href="catering.html"><li class="navLinks last">Why Vegan?</li></a>
-                        <li class="navLinks last"><img src="assets/favourite.svg" alt="Basket Icon" class="basket"></li>
-                    </ul>
-                    <hr>
-                </nav>
-            </header>
     </head>
 
+<header>
+    <div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+        <nav class="row twelve columns navbar">
+            <a href="index.html"><p class="logo">Yogan</p></a>
+            <ul class="navigation">
+                <a href="index.html"><img class="yogunLogoMenu" src="assets/yogun.svg" alt="yogun logo"></a>
+                <a href="shop.html"><li class="navLinks first">Shop</li></a>
+                <a href="catering.html"><li class="navLinks">Catering</li></a>
+                <a href="vegan.html"><li class="navLinks last">Why Vegan?</li></a>
+                <li class="navLinks last"><img src="assets/favourite.svg" alt="Basket Icon" class="basket"></li>
+            </ul>
+            <hr>
+        </nav>
+    </div>
+</header>
+
     <body>
-        <div class="row twelve columns mainBody"></div>
+        <img class="veganLogo" src="assets/veganLogo.svg" alt="Vegan page photo">
+        <div class="row twelve columns mainBody">
             <div class="row five columns">
                 <img class="cowPhoto" src="assets/cow.png" alt="cow photo">
             </div>
@@ -52,6 +58,7 @@
                     Maecenas
                 </p>
             </div>
+        </div>
             <div class="row twelve columns" style="margin-top:1vw;"></div>
 
             <div class="row six columns">
@@ -73,8 +80,10 @@
                     </p>
                 </div>
             <div class="row five columns">
-                    <img class="cowPhoto" src="assets/farmer.png" alt="cow photo">
+                    <img class="cowPhoto farmer" src="assets/farmer.png" alt="cow photo">
             </div>
+            <img class='burgerOpen' onclick="openNav()" src="assets/burgerMenu.svg" alt="menu icon">
+            <img class='burgerClosed hidden' style="z-index: 1;"onclick="closeNav()" src="assets/burgerMenuClose.svg" alt="menu icon">    
         <script src="js/script.js"></script>
     </body>
 

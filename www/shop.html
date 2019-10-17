@@ -11,81 +11,111 @@
     <link rel="stylesheet" href="css/styles.css">
     
     <title>Document</title>
-    <header>
-            <nav class="row twelve columns navbar">
-                <a href="index.html"><p class="logo">Yogan</p></a>
-                <ul class="navigation">
-                    <a href="shop.html"><li class="navLinks">Shop</li></a>
-                    <a href="catering.html"><li class="navLinks">Catering</li></a>
-                    <a href="vegan.html"><li class="navLinks last">Why Vegan?</li></a>
-                    <li class="navLinks last"><img src="assets/favourite.svg" alt="Basket Icon" class="basket"></li>
-                </ul>
-                <hr>
-            </nav>
-        </header>
 </head>
 
+<header>
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <nav class="row twelve columns navbar">
+            <a href="index.html"><p class="logo">Yogan</p></a>
+            <ul class="navigation">
+                <a href="index.html"><img class="yogunLogoMenu" src="assets/yogun.svg" alt="yogun logo"></a>
+                <a href="shop.html"><li class="navLinks first">Shop</li></a>
+                <a href="catering.html"><li class="navLinks">Catering</li></a>
+                <a href="vegan.html"><li class="navLinks last">Why Vegan?</li></a>
+                <li class="navLinks last"><img src="assets/favourite.svg" alt="Basket Icon" class="basket"></li>
+            </ul>
+            <hr>
+        </nav>
+    </div>
+</header>
+
     <body>
+        <img class="shopLogo" src="assets/shopLogo.svg" alt="Shop page logo">
         <div class="row twelve columns mainBody"></div>
-            <div class="row three columns shopItem1">
+            <div class="row three columns shopItem">
                 <h5 class="yogurtShopBigText">Coconut</h5>
                 <img class="yogurtPlainShop" src="assets/yogurtPlain.png" alt="Plain coconut yogurt">
             </div>
 
             <div class="row six columns shopInfo">
-                <button><h6 id="0" class="shopInfoTitle active underLine">Ingredients</h6></button>
-                <button><h6 id="0" class="shopInfoTitle">About</h6></button>
+                <div class="shopInfoTitleButtons">
+                    <button><h6 id="0" class="shopInfoTitle active underLine">Ingredients</h6></button>
+                    <button><h6 id="0" class="shopInfoTitle">About</h6></button>
+                </div>   
                 <p id="0" class="shopInfoText"> Coconut milk (coconut, water), organic coconut water, L. acidophilus, S. thermophilus, & other live cultures. Perishable, Keep Refrigerated.</p>
                 <p id="0" class="shopInfoText hidden">Creamy, full-fat, coconut milk, cultured with our own proprietary blend of probiotics gives you the consistency of whole milk Greek-yogurt. Rich in potassium, lauric acid and more than 300 billion live cultures per serving, it is as healthy as it is addictive.</p>
             </div>
 
-            <div class="row three columns shopItem1">
-                <button>click me</button>
+            <div class="row three columns shopItem">
+                <button class="addToCart">Add to Cart</button>
             </div>
         
 
             <div class="row twelve columns"><hr class="hrShop"></div>
 
-            <div class="row three columns shopItem1">
+            <div class="row three columns shopItem">
                 <h5 class="yogurtShopBigText">Blueberry</h5>
                 <img class="yogurtBlueShop" src="assets/yogurtBlueShop.png" alt="Blueberry coconut yogurt">
             </div>
 
             <div class="row six columns shopInfo">
+                <div class="shopInfoTitleButtons">
                     <button><h6 id="1" class="shopInfoTitle active underLine">Ingredients</h6></button>
                     <button><h6 id="1" class="shopInfoTitle">About</h6></button>
+                </div>
                     <p id="1" class="shopInfoText"> Coconut milk (coconut, water), organic coconut water, L. acidophilus, S. thermophilus, & other live cultures. Perishable, Keep Refrigerated.</p>
                     <p id="1" class="shopInfoText hidden">Creamy, full-fat, coconut milk, cultured with our own proprietary blend of probiotics gives you the consistency of whole milk Greek-yogurt. Rich in potassium, lauric acid and more than 300 billion live cultures per serving, it is as healthy as it is addictive.</p>
             </div>
 
+            <div class="row three columns shopItem">
+                    <button class="addToCart">Add to Cart</button>
+            </div>    
+
             <div class="row twelve columns"><hr class="hrShop"></div>
 
-            <div class="row three columns shopItem1">
+            <div class="row three columns shopItem">
                 <h5 class="yogurtShopBigText">Mango</h5>
                 <img class="yogurtMangoShop" src="assets/yogurtMangoShop.png" alt="Mango coconut yogurt">
             </div>
 
             <div class="row six columns shopInfo">
-                    <button><h6 id="2" class="shopInfoTitle active underLine">Ingredients</h6></button>
-                    <button><h6 id="2" class="shopInfoTitle">About</h6></button>
+                    <div class="shopInfoTitleButtons">
+                        <button><h6 id="2" class="shopInfoTitle active underLine">Ingredients</h6></button>
+                        <button><h6 id="2" class="shopInfoTitle">About</h6></button>
+                    </div>
                     <p id="2" class="shopInfoText"> Coconut milk (coconut, water), organic coconut water, L. acidophilus, S. thermophilus, & other live cultures. Perishable, Keep Refrigerated.</p>
                     <p id="2" class="shopInfoText hidden">Creamy, full-fat, coconut milk, cultured with our own proprietary blend of probiotics gives you the consistency of whole milk Greek-yogurt. Rich in potassium, lauric acid and more than 300 billion live cultures per serving, it is as healthy as it is addictive.</p>
             </div>
 
+            <div class="row three columns shopItem">
+                    <button class="addToCart">Add to Cart</button>
+            </div>
+            
+
             <div class="row twelve columns"><hr class="hrShop"></div>
 
-            <div class="row three columns shopItem1">
+            <div class="row three columns shopItem">
                 <h5 class="yogurtShopBigText">Apricot</h5>
                 <img class="yogurtMangoShop" src="assets/yogurtMangoShop.png" alt="Mango coconut yogurt">
             </div>
 
             <div class="row six columns shopInfo">
-                    <button><h6 id="2" class="shopInfoTitle active underLine">Ingredients</h6></button>
-                    <button><h6 id="2" class="shopInfoTitle">About</h6></button>
+                    <div class="shopInfoTitleButtons">
+                        <button><h6 id="2" class="shopInfoTitle active underLine">Ingredients</h6></button>
+                        <button><h6 id="2" class="shopInfoTitle">About</h6></button>
+                    </div>
                     <p id="2" class="shopInfoText"> Coconut milk (coconut, water), organic coconut water, L. acidophilus, S. thermophilus, & other live cultures. Perishable, Keep Refrigerated.</p>
                     <p id="2" class="shopInfoText hidden">Creamy, full-fat, coconut milk, cultured with our own proprietary blend of probiotics gives you the consistency of whole milk Greek-yogurt. Rich in potassium, lauric acid and more than 300 billion live cultures per serving, it is as healthy as it is addictive.</p>
             </div>
-        <div class="row twelve columns"></div>
+
+            <div class="row three columns shopItem">
+                    <button class="addToCart">Add to Cart</button>
+            </div>
+            
+        <div class="row twelve columns bottomShop"></div>
+        <img class='burgerOpen' onclick="openNav()" src="assets/burgerMenu.svg" alt="menu icon">
+        <img class='burgerClosed hidden' style="z-index: 1;"onclick="closeNav()" src="assets/burgerMenuClose.svg" alt="menu icon">    
         <script src="js/script.js"></script>
     </body>
 
@@ -109,7 +139,6 @@
                 <img class="footerIcon" src="assets/facebook.svg" alt="facebook icon">
                 <img class="footerIcon" src="assets/twitter.svg" alt="twitter icon">
             </div>
-            
         </div>
     </footer>
 </html>
