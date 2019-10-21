@@ -1,18 +1,23 @@
+/* setting all heading fonts to futura */
 h1,h2,h3,h4,h5,h6{
     font-family: futura-pt, sans-serif;
 }
 
-/* .home{overflow:hidden} */
 
+/* setting all links to underline on hover */
 a:hover{
     text-decoration: underline;
 }
 
+
+/* setting all links to no underline and setting animation duration */
 a{
     text-decoration: underline solid transparent;
     transition: text-decoration 0.3s ease;
 }
 
+
+/* setting the logo for landscape position and font */
 .logo{
     font-family: poleno, sans-serif;
     font-weight: 800;
@@ -26,20 +31,18 @@ a{
     color: #65433D;
 }
 
+/* hover scales up to signal its clickable */
 .logo:hover{
     transform: scale(1.1)
 }
 
 
-
+/* setting footer */
 .footer{
     margin-top:2vw;
 }
 
-.footerLeft{
-    margin-top:0.5vw;
-}
-
+/* setting left text of footer position */
 .footerTextLeft{
     font-size:1vw;
     margin-left:7vw;
@@ -47,35 +50,43 @@ a{
     margin-bottom:0vw;
 }
 
+/* setting middle text of footer position */
 .footerTextMiddle{
     font-size:1vw;
     text-align: center;
 }
 
+/* setting middle div of footer position */
 .footerMiddle{
     margin-top:0.5vw;
     margin-right:0; 
     margin-left:0;
 }
 
+/* setting right div of footer position */
 .footerDivIcon{
     padding-left:7vw;
 }
 
+/* setting footer icons position */
 .footerIcon{
     width:3vw;
     margin-top: 1.5vw;
     margin-left: 1vw;
     color:#3B332E;
+} 
+
+
+.hiddenIcon{
+    display:none;
 }
 
-
-
+/* setting a class up to seperate sections of needed */
 .mainBody{
     margin-top:7vw;
 }
 
-
+/* setting plain yogurt position */
 .yogurtPlainShop{
     width:14.792vw;
     align-content: center;
@@ -83,6 +94,7 @@ a{
     margin-top: -1vw;
 }
 
+/* setting blueberry yogurt position */
 .yogurtBlueShop{
     width:15.188vw;
     align-content: center;
@@ -90,6 +102,7 @@ a{
     margin-top: -1vw;
 }
 
+/* setting mango yogurt position */
 .yogurtMangoShop{
     width:15.792vw;
     align-content: center;
@@ -97,10 +110,12 @@ a{
     margin-top: -0.5vw;
 }
 
+/* setting yogurt and title div position */
 .shopItem{
     margin-left:0;
 }
 
+/* setting yogurt title position and font */
 .yogurtShopBigText{
     text-align: center;
     font-family: futura-pt, sans-serif;
@@ -111,15 +126,19 @@ a{
     margin-left:4vw;
 }
 
+/* setting yogurt info position */
 .shopInfo{
     margin-top:3vw;
     margin-left:0;
 }
 
+/* setting buttons to have no border */
 button{
     border: none;
 }
 
+
+/* giving the add to cart button a border and setting location and font */
 .addToCart{
     border: 2px solid #707070;
     border-radius: 5px;
@@ -131,11 +150,12 @@ button{
     font-style: normal;
 }
 
+/* making font bolder on hover */
 .addToCart:hover{
     font-weight: 400;
 }
 
-
+/* setting the ingredients and  */
 .shopInfoTitle{
     line-height: 10px;
     font-family: futura-pt, sans-serif;
@@ -148,14 +168,17 @@ button{
     margin-right: 2vw;
 }
 
+/* creating underline class to be used in javascript */
 .underLine{
     text-decoration: underline;
 }
 
+/* setting opacity of active to full */
 .active{
     opacity: 1;
 }
 
+/* setting information text position */
 .shopInfoText{
     font-size:1vw;
     margin-top:1.5vw;
@@ -164,35 +187,30 @@ button{
     margin-left: 1.5vw;
 }
 
-
-.about{
-    position: relative;
-    margin-top:-75px;
-    font-family: roboto, sans-serif;
-    font-weight: 400;
-    margin-left: 1.5vw;
-}
-
+/* hidden class to be called by javascript */
 .hidden{
     display:none;
 }
 
+/* class to show information to be called by javascript */
 .unHidden{
     display:block;
 }
 
+/* setting wedding photo initial float and width */
 .weddingPhoto{
     float:right;
     width:40.708vw;
-    margin-right: 5vw;
 }
 
+/* setting catering text div location */
 .catering{
     padding-right: 10vw;
     margin-left:0vw;
     margin-top:-0.2vw;
 }
 
+/* setting text for both catering title and contact title */
 .cateringTitle, .cateringContact{
     color: #3B332E;
     margin-left: -1.7vw;
@@ -203,27 +221,31 @@ button{
     letter-spacing: 0.05vw;
 }
 
+/* setting catering contact margins and location */
 .cateringContact{
     margin-top: 3vw;
     margin-left:44vw;
 }
 
-
+/* setting catering text margins */
 .cateringText{
     margin-top:1vw;
     margin-left:-1.5vw;
 }
 
+/* setting inputs and textarea margins */
 input, textarea{
     margin-top:2vw;
     margin-left:8vw;
 }
 
+/* setting tick margins */
 .copySend{
     margin-top:5.5vw;
     margin-left:0;
 }
 
+/* setting send form button location and fonts */
 .buttonCatering{
     border: 2px solid #707070;
     border-radius: 5px;
@@ -235,25 +257,30 @@ input, textarea{
     font-style: normal;
 }
 
+/* half width form input section width */
 .halfWidth{
     width:30vw;
 }
 
+/* half width (right) form input section margin */
 .right{
     margin-left: 2vw;
 }
 
+/* setting full width for message */
 .fullWidth{
     width:62.5vw;
     height:10vw;
 }
 
+/* setting cow photo margin and width */
 .cowPhoto{
     width:26.354vw;
     padding-left:7.604vw;
     margin-top:2vw;
 }
 
+/* setting the vegan titles position, font and keeping text in one line */
 .veganTitle{
     margin-top:3vw;
     margin-bottom:4vw;
@@ -264,6 +291,7 @@ input, textarea{
     letter-spacing: 0.05vw;
 }
 
+/* setting vegan text position */
 .veganText{
     margin-right:10.313vw;
     margin-left:2vw;
@@ -271,6 +299,7 @@ input, textarea{
     margin-top:2vw;
 }
 
+/* setting second half of vegan picture on other side */
 .veganTitleRev{
     margin-top:4vw;
     font-size: 3.2vw;
@@ -283,6 +312,7 @@ input, textarea{
     letter-spacing: 0.05vw;
 }
 
+/* second set of vegan text other side */
 .veganTextRev{
     margin-left:10.313vw;
     margin-right:2vw;
@@ -291,35 +321,74 @@ input, textarea{
     text-align: right;
 }
 
+.phoneMenuFooter{
+    display: none;
+}
 
- 
+ /* portrait media queries done for personal navbar */
 @media (orientation: portrait) {
 
+    /* cow photo removed */
+    .cowPhoto{
+        display:none;
+    }
 
+    /* taking off margin for for icons */
+    .veganSix{
+        margin:0; 
+    }
 
+    /* getting rid of seperation to allow text to be next to each other */
+    .seperator{
+        display:none;
+    }
+
+    /* showing hidden icons */
+    .hiddenIcon{
+        display:block;
+    }
+
+    /* hiding footer */
+    .footer{
+        display:none;
+    }
+
+    .phoneMenuFooter{
+        display:block;
+    }
+
+    /* changing position for first screen sizes */
     .cowPhoto{
         margin-top:5vw;
     }
 
-    .veganTitle{
-        margin-top:5vw;
+    .veganTitle, .veganTitleRev{
+        margin-top:0vw;
         margin-bottom:1vw;
+        text-align: center;
+        margin-left:0;
     }   
+
 
     .farmer{
         margin-top:7vw;
     }
 
     .veganText, .veganTextRev{
+        /* changing font size for portrait */
         font-size:1.5vw;
         margin:0;
-        margin-left:-1.4vw;
+        text-align: left;
+        padding: 3vw;
+        margin-bottom:30vw;
     }
 
+    /* disabling wedding photo */
     .weddingPhoto{
         display: none;
     }
 
+    
     .cateringTitle, .cateringContact{
         font-size:3.2vw;
     }
@@ -368,13 +437,6 @@ input, textarea{
         margin-top: 2vw;
     }
 
-    .weddingPhoto{
-        width:40.708vw;
-        margin-top:2.5vw;
-        margin-left: 0;
-        margin-right: 0vw;
-    }
-
     .catering{
         margin-left:0;
         margin-top:2vw;
@@ -398,8 +460,8 @@ input, textarea{
 
     .shopLogo, .cateringLogo, .veganLogo{
         margin-top:4vw;
-        margin-left:30vw;
-        width:40vw;
+        margin-left:10vw;
+        width:80vw;
     }
 
     .yogurtPlainShop{
@@ -455,96 +517,147 @@ input, textarea{
         margin-left: 3.5vw;
     }
 
+    /* setting up burger menu icons */
     .burgerOpen{
         position: fixed;
     }
 
+    /* setting to fixed to keep in same place always */
     .burgerClosed{
         position: fixed;
     }
 
+    /*  */
     .footer{
-        display:none;
+        margin-bottom:40vw;
     }
-
+    
+    /* hiding navbar elements no longer needed */
     hr, .logo {
         display:none;
     }
     
+    /* setting navigation links for portrait screens */
     .navigation {
+        /* displaying them not inline */
         display: block;
-        color: black;
+        color: #3B332E;
         position: relative;
-        text-align: center; /* Centered text/links */
-        margin-top: 1.5vh; /* 30px top margin to avoid conflict with the close button on smaller screens */
+        text-align: center;
+        margin-top: 1.5vh; 
       }
 
+      /* new yogun logo for menu */
       .yogunLogoMenu{
           width:60vw;
       }
 
+    /* setting the overlay setting for portrait navigation */
     .overlay {
-        /* Height & width depends on how you want to reveal the overlay (see JS below) */   
         height: 0;
         width: 100%;
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
+        position: fixed; 
+        /* Sit on top of all other elemens */
+        z-index: 1; 
         left: 0;
         top: 0;
-        background-color: rgb(255,255,255); /* Black fallback color */
-        overflow-x: hidden; /* Disable horizontal scroll */
-        transition: 0.2s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+        background-color: rgb(255,255,255); 
+        /* Disable horizontal scroll */
+        overflow-x: hidden; 
+        /* 0.2 second animation of slide in of navigation */
+        transition: 0.2s; 
       }
 
+      /* changing link text properties */
       .navLinks{
         font-family: futura-pt, sans-serif;
         font-weight: 800;
         font-style: normal;
         font-size: 5vh;
         margin-bottom: 15vh;
-        list-style-type: none;
+        list-style-type: none !important;
         margin-right:3.646vw;
         color: #3B332E;
         text-transform: uppercase;
     }
 
+
+    /* setting nav icons */
+    .phoneIcon, .mailIcon, .locationIcon{
+        width:9vw !important;
+        margin-top:-4vw;
+    }
+
+    .phoneIcon{
+        margin-bottom: 6vw;
+        margin-left: 9vw;
+    }
+
+    .mailIcon{
+        margin-left: -16vw;
+    }
+
+    .locationIcon{
+        margin-left: -3vw;
+    }
+
+    /* nav icon div */
+    .navIcon{
+        display: inline !important;
+        width:3vw;
+        position: absolute;
+        margin-left:-3vw; 
+    }
+
+    /* giving top link top margin */
     .first{
         margin-top:15vw;
     }
 
+    /* changing cart size */
     .basket{
-        width: 6vh;
+        width: 8vh;
     }
     
+    /* removing bullet points from list */
+    li{
+        list-style-type: none;
+    }
 
     @media (max-width: 575.98px) { 
 
+        .veganText{
+            margin-bottom:4vw;
+        }
+
+        /* adding margin bottom for white space to get enable scroll over burger menu */
         .bottomShop{
             margin-bottom: 40vw;
         }
 
-        .cowPhoto{
-            display:none;
-        }
-
+        /* changing location and center text */
         .veganText, .veganTextRev{
-            text-align: center;
-            margin-right: 10vw;
-            margin-left: 10vw;
+            text-align:left;
+            margin-right: 3vw;
+            margin-left: 3vw;
             font-size: 4vw;
             margin-top:4vw;
         }
 
+        /* setting vegan text */
         .veganTitle{
             margin-left:1vw;
-            font-size: 6vw;
+            font-size: 8vw;
             text-align: center;
+            white-space: normal;
         }
 
+
+        /* moving elements */
         .veganTitleRev{
-            font-size: 6vw;
+            font-size: 8vw;
             margin-left:-1vw;
-            margin-top:10vw;
+            margin-top:0vw;
         }
 
         .veganTextRev{
@@ -561,11 +674,10 @@ input, textarea{
         }
 
         .cateringTitle{
-            font-size: 6vw;
+            font-size: 8vw;
             text-align: center;
         }
         
-
         .cateringContact{
             font-size: 4vw;
             margin-left: 39vw;
@@ -585,6 +697,7 @@ input, textarea{
             padding-bottom: 3vw;
         }
 
+        /* setting smaller form inputs to full width of screen */
         .halfWidth{
             width:90vw;
         }
@@ -600,6 +713,7 @@ input, textarea{
         }
     
         .yogurtPlainShop{
+            margin-bottom:-4vw;
             margin-left: 15vw;
             margin-bottom:3vw;
             width:70vw;
@@ -638,11 +752,8 @@ input, textarea{
             margin-bottom: 15vw;
         }
     
-        .addToCart:hover{
-            font-weight: 400;
-        }
-    
         .shopInfoTitleButtons{
+            margin-top:6.5vw;
             margin-left:11vw;
         }
         .shopInfoTitle{
@@ -664,6 +775,7 @@ input, textarea{
             width:65vw;
         }
         
+        /* setting recycle landing page text size and location*/
         .recycleSolo{
             width: 30vw;
             margin-left: 37vw;
@@ -673,14 +785,13 @@ input, textarea{
             z-index: -1;
         }
 
-        .footer{
-            display:none;
-        }
-
+        
+        /* removing image with all text for smaller screen */
         .imageMid{
             display:none;
         }
 
+        /* changin location */
         .topSVG{
             height: 15vw;
             width: 100.458vw;
@@ -689,6 +800,7 @@ input, textarea{
             display: block;
         }
 
+        /* removing bottom text */
         .bottomSVG{
             display: none;
         }
@@ -697,12 +809,14 @@ input, textarea{
             position: absolute;
         }
 
-
+        /* increasing size of plain */
         .plain{
             margin-left: 6vw;
             width: 90.271vw;
             margin-top:10.889vw;
         }
+    
+        /* hiding other yogurts when screen is too narrow */
 
         .blue{
             display: none;
@@ -729,10 +843,33 @@ input, textarea{
             margin-left:20vw;
             width:60vw;
         }
+
+        /* changin icon size for smaller screens */
+        .phoneIcon, .mailIcon, .locationIcon{
+            width:15vw !important;
+            margin-bottom:30vw;
+        }
+
+        .phoneIcon{
+            margin-bottom: 6vw;
+            margin-left: 12vw;
+        }
+    
+        .mailIcon{
+            margin-left: -24vw;
+        }
+    
+        .locationIcon{
+            margin-left: -5vw;
+        }
+    
     }
 
     @media (min-width: 576px) and (max-width: 767.98px) { 
+    
 
+
+        /* resizing and moving elements for this breakpoint */
         .bottomShop{
             margin-bottom: 40vw;
         }
@@ -762,6 +899,7 @@ input, textarea{
             width:50vw;
         }
         
+        /* changin recycle text size */
         .recycleSolo{
             width: 30vw;
             margin: auto;
@@ -770,15 +908,18 @@ input, textarea{
             position: relative;
             z-index: -1;
         }
-
+        
+        /* hiding footer */
         .footer{
             display:none;
         }
 
+        /* hiding mid image to be replaced by new layout */
         .imageMid{
             display:none;
         }
 
+        /* changin sizes */
         .topSVG{
             height: 10vw;
             width: 65.458vw;
@@ -787,6 +928,8 @@ input, textarea{
             display: block;
         }
 
+
+        /* removing bottom svg */
         .bottomSVG{
             display: none;
         }
@@ -830,6 +973,8 @@ input, textarea{
     }
 
     @media (min-width: 768px) and (max-width: 991.98px) {
+
+        /* as screens get smaller less elements are shown */
         .bottomShop{
             margin-bottom: 20vw;
         }
@@ -964,59 +1109,23 @@ input, textarea{
             margin-top:4.889vw;
         }
 
-        .footer{
-            position: absolute;
-            bottom:0;
-        }
-
-        .footerLeft{
-            margin-top:0.5vw;
-        }
-
-        .footerTextLeft{
-            font-size:1vw;
-            margin-left:7vw;
-            margin-top:0.5vw;
-            margin-bottom:0vw;
-        }
-
-        .footerTextMiddle{
-            font-size:1vw;
-            text-align: center;
-        }
-
-        .footerMiddle{
-            margin-top:0.5vw;
-            margin-right:0; 
-            margin-left:0;
-        }
-
-        .footerDivIcon{
-            padding-left:7vw;
-        }
-
-        .footerIcon{
-            width:3vw;
-            margin-top: 1.5vw;
-            margin-left: 1vw;
-            color:#3B332E;
-        }
-
         .burgerOpen{
             bottom: 9vh;
             right: 7vh;
-            width: 130px;
+            width: 12vw;
         }
 
         .burgerClosed{
             bottom: 9vh;
             right: 7vh;
-            width: 130px;
+            width: 12vw;
         }
 
         .recycleSolo{
             display: none;
         }
+
+        /* hiding locally sourced text when large enough for image to come back */
 
         .locallySourced{
             display:none;
@@ -1044,14 +1153,26 @@ input, textarea{
 
 @media (orientation: landscape) {
 
+    /* moving top text and photo under navbar */
+    .cowPhoto, .veganSix{
+        margin-top:8.5vw;
+    }
+    /* moving text up for lower text vegan page */
+    .lower{
+        margin-top:0;
+    }
+
+    /* showing wedding photo */
     .weddingPhoto{
         display: block;
         margin-right:4vw;
     } 
-
+    
+    /* hiding phone elements */
     .burgerClosed, .burgerOpen, .recycleSolo, .locallySourced, .yogunLogo, .yogunLogoMenu, .shopLogo, .cateringLogo, .veganLogo{
         display: none;
     }
+
 
     .catering{
         padding:0;
@@ -1085,6 +1206,7 @@ input, textarea{
         font-size:1.4vw;
     }
 
+    /* setting navbar setting and animation */
     .navbar{
         transition: all 0.2s ease-in-out;
         position: fixed;
@@ -1094,6 +1216,7 @@ input, textarea{
         z-index: 1;
     }
     
+    /* setting nav link div settings */
     .navigation{
         text-align: right;
         list-style-type: none;
@@ -1103,6 +1226,7 @@ input, textarea{
         padding-right: 0;
     }
     
+    /* setting font options of actual links */
     .navLinks{
         display: inline;
         font-family: futura-pt, sans-serif;
@@ -1113,16 +1237,19 @@ input, textarea{
         color: #3B332E;
     }
     
+    /* setting cart icon */
     .basket{
-        height: 2.188vw;
+        height: 2.5vw;
         line-height: 100%;
-        margin-bottom: -0.5vw;
+        margin-bottom: -0.6vw;
     }
+    
     
     nav{
         position: relative;
     }
     
+    /* setting all  */
     hr{
         margin-bottom:0vw;
         position: relative;
@@ -1144,6 +1271,8 @@ input, textarea{
     }
 
     @media (min-width: 0px) and (max-width: 575.98px) { 
+
+        /* smaller screens less is shown */
 
         .cowPhoto{
             display: none;
@@ -1333,6 +1462,10 @@ input, textarea{
 
     @media (min-width: 576px) and (max-width: 767.98px) {  
 
+        .cowPhoto{
+            margin-top:4vw;
+        }
+
 
         .weddingPhoto{
             display: none;
@@ -1415,6 +1548,7 @@ input, textarea{
 
     @media (min-width: 768px) and (max-width: 991.98px) {
 
+        /* using object fit to crop images as sizes change */
         .cowPhoto{
             margin-top: 1vw;
             width:26.354vw;
